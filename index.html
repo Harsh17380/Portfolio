@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="script.css">
+    <script src="https://kit.fontawesome.com/7da596c552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Hp.png" alt="">
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars l1" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hi, I'm <span>Harsh</span> <br>And I'm from India</h1>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="a-col1"><img src="images/img1.png" alt=""></div>
+            <div class="a-col2"><h1 class="sbt tbs">About me</h1>
+            <p>Welcome! I'm a tech enthusiast proficient in Java and SQL, with hands-on experience in projects like the Salesforce Virtual Internship and creating the Dino Game, a Java-based endless runner game. I'm actively learning web development using HTML, CSS, and JavaScript. I possess strong leadership skills, active listening abilities, and adaptability. Academically, I've excelled in interschool debates and have a passion for robotics, as evident from my participation in a robotics workshop. Certified in AI by Infosys, my commitment to learning is highlighted by the completion of the Devtown Bootcamp project, collaborating with Google and Microsoft. Beyond tech, I love traveling and staying fit at the gym.</p>
+                <div class="tab-title">
+                    <p class="tab-links act" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links " onclick="opentab('edu')">Education</p>
+                </div>
+                <div class="tab-content act1" id="skills">
+                    <ul>
+                        <li><span>JAVA</span><br>Java Developer</li>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>PYTHON</span><br>Python for Machine Learning </li>
+
+                    </ul>
+
+                </div>
+                <div class="tab-content" id="exp">
+                    <ul>
+                        <li><span>Salesforce Virtual Internship</span><br>Developer Super Set</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="edu">
+                    <ul>
+                        <li><span>2020-2024</span><br>B. Tech from DIT University</li>
+                        <li><span>2020</span><br>Intermediate from Raja Ram Mohan Roy Academy</li>
+                        <li><span>2018</span><br>Matriculation from Raja Ram Mohan Roy Academy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="services">
+    <div class="container">
+        <div class="b-col2"><h1 class="sbt">Services</h1>
+            <div class="ser-li">
+                <div><i class="fa-brands fa-java"></i>
+                    <h2>Java Development</h2>
+                    <p>As a dedicated Java Developer, I bring a wealth of experience and expertise to the table. My services encompass a wide array of Java development solutions tailored to meet the unique needs of businesses across various domains.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div><i class="fa-solid fa-code"></i><h2>Web Development</h2>
+                    <p>Experienced in crafting visually appealing and functional websites. Proficient in HTML, CSS, and JavaScript, I create dynamic and responsive web experiences for businesses and individuals, ensuring a lasting impact.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div><i class="fa-solid fa-display"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Passionate about delivering exceptional user experiences through intuitive and visually captivating interfaces. My focus on user-centric design ensures seamless interactions and enhances overall usability.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div><i class="fa-solid fa-laptop-code"></i><h2>Machine Learning</h2>
+                    <p>Passionate about utilizing Python for machine learning, I specialize in crafting intelligent algorithms for impactful data analysis. My expertise spans data preprocessing, model development, and evaluation, driving innovative solutions across various domains.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sbt">Projects</h1>
+        <div class="proj-list">
+            <div class="proj">
+                <img class = "ex" src="images/rex.jpg" height="57%">
+                <div class="layer">
+                    <h3>T-rex Game</h3>
+                    <p>Created a T-Rex game using Java, featuring an endless runner scenario with obstacle dodging mechanics for an engaging gaming experience.</p>
+                    <a href="https://github.com/Harsh17380/Dino_Java.git"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="images/wea.jpg" height="57%">
+                <div class="layer">
+                <h3>Weather Now</h3>
+                <p>Developed a Weather Now web app using HTML, CSS, and JavaScript, providing real-time weather information and forecasts for enhanced user experience.</p>
+                <a href="https://weatherappbyharshpal.netlify.app/"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+            <div class="proj">
+                <img src="images/ML.png" height="57%">
+                <div class="layer">
+                <h3>Sentimental Analysis on Amazon Product Review</h3>
+                <p>Conducted Sentiment Analysis on Amazon product reviews using Machine Learning techniques, offering valuable insights into customer sentiments and enhancing decision-making processes for businesses.</p>
+                    <a href="https://colab.research.google.com/drive/1dIx5Kc3YCbKT2_IXazHUQkTVGdwd6PQt?usp=sharing"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="con_left">
+                <h1 class="sbt">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> harshpal17380@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8194037438</p>
+                <div class="soi">
+                    <a href="https://www.linkedin.com/in/harsh-pal-171b80240/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/harsh_pal2003/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Harsh%20Pal%20Resume.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="con_right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn bt1">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontent = document.getElementsByClassName("tab-content")
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("act")
+        }
+        for (content of tabcontent){
+            content.classList.remove("act1")
+        }
+        event.currentTarget.classList.add("act")
+        document.getElementById(tabname).classList.add("act1")
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemeu.style.right = "0px" ;
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px" ;
+    }
+</script>
+</body>
+</html>
